@@ -1,0 +1,23 @@
+<div class="session-wrapper">
+	{{#each-in @session.listOfSessions as |order itemObj|}}
+		<div class="session-info">
+			<h1 class="topic-name">Object oriented pattern in JavaScript</h1>
+			<h2 class="speaker-name">
+				{{itemObj.speakerName}}
+				<span class="speaker-social-info linkedin-info">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kratikac/">
+						<img class="social-media-logo" src="assets/images/linkedin512.png" alt="LinkedIn logo" />
+					</a>
+				</span>
+			</h2>
+			<h3 class="speaker-info">{{itemObj.speakerInfo}}</h3>
+			<ul>
+				{{#each itemObj.topicBullets as |topics|}}
+				<li>
+					{{topics}}
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	{{/each-in}}
+</div>

@@ -1,3 +1,5 @@
+@import 'events.css';
+
 body {
     font-family: 'Roboto', sans-serif;
     /*
@@ -81,4 +83,3 @@ body {
     transition: background-color 0.2s ease-in;
     outline: #041484;
   }
-  

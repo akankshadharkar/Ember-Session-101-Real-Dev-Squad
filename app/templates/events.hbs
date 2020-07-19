@@ -1,2 +1,20 @@
-This is EVENTS
-{{outlet}}
+<header>
+	<a href="https://realdevsquad.com/" rel="noopener noreferrer">
+		<img class="logo-img__events" src="assets/images/Real-Dev-Squad@1x.png" alt="Real Dev Squad logo" />
+	</a>
+</header>
+
+<section class="event-details">
+	<h2 class="event-upcoming">Upcoming Event</h2>
+	<h1 class="event-title">Web Mini-Conference</h1>
+	<h3 class="event-date-time">July 12th, 2pm IST</h3>
+	
+	<RegisterButton/>
+
+</section>
+
+<h2 class="speakers-title">Sessions: {{this.numberOfSessions}}</h2>
+
+<SessionCard @session={{@model}}/>
+
+<RegisterButton/>
